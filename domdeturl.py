@@ -30,7 +30,7 @@ class DomDetURL:
         url_desktop = self.geturl(DomDetURL.ua_desktop, 'http://' + domain)
         logging.debug('url_desktop [{}]'.format(url_desktop))
         # Determine URL for mobile. Use desktop URL with mobile user agent
-        url_mobile = self.geturl(DomDetURL.ua_mobile, url_desktop)
+        url_mobile = self.geturl(DomDetURL.ua_mobile, 'http://' + domain)
         logging.debug('url_mobile [{}]'.format(url_mobile))
 
         # Return determined data

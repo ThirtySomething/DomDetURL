@@ -113,11 +113,12 @@ python program.py ladies.de heise.de dumbdomain
 The results of the script will be logged to the file ```program.log```:
 
 ```Python
-2020-01-25 16:08:36,831 | INFO | <module> | domains [{'DOMAIN': 'ladies.de', 'DESKTOP': 'https://www.ladies.de/', 'MOBILE': 'https://m.ladies.de/'}]
-2020-01-25 16:08:36,986 | INFO | <module> | domains [{'DOMAIN': 'heise.de', 'DESKTOP': 'https://www.heise.de/', 'MOBILE': 'https://www.heise.de/'}]
-2020-01-25 16:08:39,248 | INFO | geturl | Connection error for [http://dumbdomain]: [HTTPConnectionPool(host='dumbdomain', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000241BAE7AC10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))]
-2020-01-25 16:08:41,505 | INFO | geturl | Connection error for [http://dumbdomain]: [HTTPConnectionPool(host='dumbdomain', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000241BAE7A400>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))]
-2020-01-25 16:08:41,505 | INFO | <module> | domains [{'DOMAIN': 'dumbdomain', 'DESKTOP': 'http://dumbdomain', 'MOBILE': 'http://dumbdomain'}]
+2020-01-25 16:42:11,244 | INFO | <module> | startup
+2020-01-25 16:42:14,950 | INFO | <module> | domains [{'DOMAIN': 'ladies.de', 'DESKTOP': 'https://www.ladies.de/', 'MOBILE': 'https://m.ladies.de/'}]
+2020-01-25 16:42:15,128 | INFO | <module> | domains [{'DOMAIN': 'heise.de', 'DESKTOP': 'https://www.heise.de/', 'MOBILE': 'https://www.heise.de/'}]
+2020-01-25 16:42:17,387 | INFO | geturl | Connection error for [http://dumbdomain]: [HTTPConnectionPool(host='dumbdomain', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F09EA02820>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))]
+2020-01-25 16:42:19,642 | INFO | geturl | Connection error for [http://dumbdomain]: [HTTPConnectionPool(host='dumbdomain', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F09EA02040>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))]
+2020-01-25 16:42:19,642 | INFO | <module> | domains [{'DOMAIN': 'dumbdomain', 'DESKTOP': 'http://dumbdomain', 'MOBILE': 'http://dumbdomain'}]
 ```
 
 [ChadList]: https://github.com/chadmayfield/my-pihole-blocklists

@@ -15,7 +15,7 @@ logging.basicConfig(
 
 # Determine desktop and mobile url for passed domain
 if __name__ == '__main__':
-    logging.debug('startup')
+    logging.info('startup')
     min_domain = 1
     max_domain = len(sys.argv)
     if len(sys.argv) >= min_domain:
